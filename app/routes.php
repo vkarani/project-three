@@ -13,5 +13,16 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	//return View::make('hello');
+	return 'This is the landing page';// TODO replace with a view
+});
+
+
+Route::get('/user-generator', function () {
+	return 'This is where the user generator will live for GET'; //TODO replace with VIEW. Will I need a POST?
+});
+
+
+Route::get('/lorem-ipsum', function () {
+	return 'This is where the lorem-ipsum generator will live for GET'; //TODO replace with VIEW. WIll I need a POST?
 });
