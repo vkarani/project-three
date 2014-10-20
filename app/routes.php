@@ -14,19 +14,20 @@
 
 /*Add all the packages that will be needed...*/
 use Badcow\LoremIpsum;
-use Fzaninotto\Faker;
+use fzaninotto\Faker\src;
 
 Route::get('/', function()
 {
 	//return View::make('hello');
-	//return 'This is the landing page';// TODO replace with a view
 	return View::make('index');
 });
 
 
 Route::get('/user-generator', function () {
 	//return 'This is where the user generator will live for GET'; //TODO replace with VIEW. Will I need a POST?
-   return View::make('user-generator');
+	$faker = Faker\Factory::create();
+   return View::make('user-generator')
+   -> with('faker',$faker);
 });
 
 
@@ -34,7 +35,6 @@ Route::get('/lorem-ipsum', function () {
 	$count=3;//Hardcode for now TODO get count proply
 	$generator = new Badcow\LoremIpsum\Generator();    ;
 	$paragraphs = $generator->getParagraphs($count);
-	//$paragraphs="Boo";//TODO testing ...
 	return View::make('lorem-ipsum')
 	-> with('paragraphs',$paragraphs);
 });
