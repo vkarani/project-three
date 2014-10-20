@@ -9,7 +9,7 @@
 @stop
 
 @section('content')
-    <h1>This is project three</h1>
+    <h1>Victor Karani Project three</h1>
     @yield('user-generator')
     @yield('lorem')    
 @stop
