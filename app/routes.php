@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -10,6 +11,10 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
+
+/*Add all the packages that will be needed...*/
+use Badcow\LoremIpsum;
+use Fzaninotto\Faker;
 
 Route::get('/', function()
 {
@@ -26,6 +31,10 @@ Route::get('/user-generator', function () {
 
 
 Route::get('/lorem-ipsum', function () {
-	//return 'This is where the lorem-ipsum generator will live for GET'; //TODO replace with VIEW. WIll I need a POST?
-	return View::make('lorem-ipsum');
+	$count=3;//Hardcode for now TODO get count proply
+	$generator = new Badcow\LoremIpsum\Generator();    ;
+	$paragraphs = $generator->getParagraphs($count);
+	//$paragraphs="Boo";//TODO testing ...
+	return View::make('lorem-ipsum')
+	-> with('paragraphs',$paragraphs);
 });
