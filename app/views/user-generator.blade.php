@@ -9,6 +9,7 @@
     The default number of users is 2<br>
     2 to 99 Users are allowed<br><br>
     
+    {{-- Display the Form--}}
     {{ Form::open(array(
       'url' => '/user-generator',
       'method' => 'GET'
@@ -45,10 +46,9 @@
       @endif
       <br>
       {{ Form::submit('Generate!') }}              
-    {{ Form::close() }}    
-    
-    <br><br>       
-    
+    {{ Form::close() }}<br><br>    
+
+  {{--Display the user info --}}    
   @for($i=0; $i < $num_users; $i++)
     Name  :
     {{$faker->name}}<br>

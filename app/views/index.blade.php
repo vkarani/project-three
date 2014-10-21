@@ -24,6 +24,13 @@
   <br><br>
   <a href='/user-generator'>Create some Random Users...</a> 
   <br><br>   
+  
+  <h2>XKCD style password generator</h2>
+  Developers can also get access to a configurable XKCD style password generator
+  <br><br>
+  <a href='/xkcd'>Create XKCD style passwords...</a> 
+  <br><br>
+  
 @stop
 
 @section('footer')

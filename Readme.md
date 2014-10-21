@@ -19,3 +19,6 @@ Lorem ipsum Description is from wikipedia:- http://en.wikipedia.org/wiki/Lorem_i
 Lorem Ipsum Package - https://packagist.org/packages/badcow/lorem-ipsum
 
 Random users package - https://packagist.org/packages/fzaninotto/faker
+
+Word lists helpfully provided from http://www.paulnoll.com/Books/Clear-English/.
+I specifically used http://www.paulnoll.com/Books/Clear-English/words-29-30-hundred.html for my word list.

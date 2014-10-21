@@ -7,7 +7,7 @@
   <h2>Lorem Ipsum Text Generator</h2>
   Please select the number of paragraphs of lorem ipsum text that you want.<br>
   The default number is 2<br>
-  A maximum of 99 paragraphs is allowed<br><br>
+  1 to 99 paragraphs are allowed<br><br>
         
   {{ Form::open(array(
     'url' => '/lorem-ipsum',
@@ -17,11 +17,8 @@
     array('id' => 'num_paragraphs')) }}
     {{ Form::text('num_paragraphs', $num_paragraphs,['maxlength' => '2']) }}
     {{ Form::submit('Generate!') }}              
-  {{ Form::close() }}    
+  {{ Form::close() }}<br><br>
+  
+  {{implode('<p>', $paragraphs)}}    
     
-  <br><br>    
-    
-  <?php
-  echo implode('<p>', $paragraphs);
-  ?>
 @stop
