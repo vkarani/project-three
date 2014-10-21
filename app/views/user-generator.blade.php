@@ -14,7 +14,7 @@
       'url' => '/user-generator',
       'method' => 'GET'
     )) }}
-      {{ Form::label('users', '# of Users',
+      {{ Form::label('num_users', '# of Users',
         array('id' => 'users')) }}
       {{ Form::text('num_users', $num_users,['maxlength' => '2']) }}
       <br>
