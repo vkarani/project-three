@@ -1,6 +1,9 @@
-@extends('index')
+@extends('_master')
 
-@section('user-generator')
+@section('content')
+    <a href='/'>Home</a>
+    <br><br>
+    
     <h2>Random User Generator</h2>
     Please select the number of Users that you want.<br>
     The default number is 2<br>

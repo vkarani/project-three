@@ -29,7 +29,6 @@ Route::get('/user-generator', function () {
 	if($num_users <1||$num_users>99) {
 		$num_users=2;//Default of 2 users
 	}
-	//return 'This is where the user generator will live for GET'; //TODO replace with VIEW. Will I need a POST?
 	$faker = Faker\Factory::create();
    return View::make('user-generator')
    -> with('faker',$faker)
