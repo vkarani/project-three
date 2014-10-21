@@ -13,8 +13,8 @@
     'url' => '/lorem-ipsum',
     'method' => 'GET'
   )) }}
-    {{ Form::label('num_paragraphs', '# of Paragraphs',
-    array('id' => 'num_paragraphs')) }}
+    {{ Form::label('paragraphs', '# of Paragraphs',
+    array('id' => 'paragraphs')) }}
     {{ Form::text('num_paragraphs', $num_paragraphs,['maxlength' => '2']) }}
     {{ Form::submit('Generate!') }}              
   {{ Form::close() }}<br><br>

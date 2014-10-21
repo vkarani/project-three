@@ -25,7 +25,7 @@
     'url' => '/xkcd',
     'method' => 'GET'
   )) }}
-    {{ Form::label('number of words', '# of Words') }}
+    {{ Form::label('words', '# of Words') }}
     {{ Form::text('number_of_words', $number_of_words,['maxlength' => '1'],['value' => '3']) }}
     <br>
 
