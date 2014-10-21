@@ -24,7 +24,11 @@ Route::get('/', function()
 
 
 Route::get('/user-generator', function () {
-	$num_users = Input::get('num_users');
+	$num_users     = Input::get('num_users');
+	$date_of_birth = Input::get('date_of_birth');
+	$city_of_birth = Input::get('city_of_birth');
+	$address = Input::get('address');
+	//var_dump($address);
 	//make sure input is between 1 and 99
 	if($num_users <1||$num_users>99) {
 		$num_users=2;//Default of 2 users
@@ -32,7 +36,10 @@ Route::get('/user-generator', function () {
 	$faker = Faker\Factory::create();
    return View::make('user-generator')
    -> with('faker',$faker)
-   -> with('num_users',$num_users);
+   -> with('num_users',$num_users)
+   -> with('date_of_birth',$date_of_birth)
+   -> with('city_of_birth',$city_of_birth)
+   -> with('address',$address);
 });
 
 

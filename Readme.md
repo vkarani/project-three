@@ -15,5 +15,7 @@ Validated css and html on http://validator.w3.org/ as per feedback from P1  TODO
 
 ## Outside code and resources
 Lorem ipsum Description is from wikipedia:- http://en.wikipedia.org/wiki/Lorem_ipsum
+
 Lorem Ipsum Package - https://packagist.org/packages/badcow/lorem-ipsum
+
 Random users package - https://packagist.org/packages/fzaninotto/faker
