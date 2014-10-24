@@ -4,14 +4,17 @@
 <http://p3.digitalwebapplications.com>
 
 ## Description
-My Project #3 Developer's Best Friend provides a source for random user names and lorem ipsum text.
+My Project #3 Developer's Best Friend provides 
+- a source for random user names 
+- lorem ipsum text and ...
+- the xkcd passwd generator from p2, retooled for laravel.
 
 ## Demo
 Will present Demo in my section on 10/30/14
 
 ## Details for teaching team
 No login required.
-Validated css and html on http://validator.w3.org/  Still TODO css!!
+Validated css and html on http://validator.w3.org/
 
 ## Outside code and resources
 Lorem ipsum Description is from wikipedia:- http://en.wikipedia.org/wiki/Lorem_ipsum
