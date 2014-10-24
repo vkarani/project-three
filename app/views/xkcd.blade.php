@@ -1,14 +1,19 @@
 @extends('_master')
 
+@section('head')
+<link rel='stylesheet' href='/css/p3_xkcd.css' type='text/css'>
+@stop
+
 @section('title')
     XKCD for laravel
 @stop
 
 @section('content')
-<a href='/'>Home</a>
+<a href='/' class="button">Home</a>
 <br><br>
     
 <h2>XKCD Password Generator</h2>
+  <p class="password"> 
   {{-- Display the password--}}
   @if(!is_null($word_list))
     @for($i = 0; $i < $number_of_words; $i++)
@@ -18,6 +23,7 @@
       @endif
     @endfor
   @endif
+  </p>
   <br><br>
   
   {{--Display the Selection Form --}}
@@ -50,6 +56,6 @@
     {{ Form::submit('Create another Password') }}
   {{ Form::close() }}<br><br>
   
-  <img src=' {{ URL::asset('images/password_strength.png') }} ' alt='xkcd style passwords'>
+  <img class="image" src=' {{ URL::asset('images/password_strength.png') }} ' alt='xkcd style passwords'>
   
 @stop

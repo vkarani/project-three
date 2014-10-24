@@ -1,7 +1,11 @@
 @extends('_master')
 
+@section('head')
+<link rel='stylesheet' href='/css/p3_lorem_ipsum.css' type='text/css'>
+@stop
+
 @section('content')
-  <a href='/'>Home</a>
+  <a href='/' class="button">Home</a>
   <br><br>
 
   <h2>Lorem Ipsum Text Generator</h2>
@@ -19,6 +23,10 @@
     {{ Form::submit('Generate!') }}              
   {{ Form::close() }}<br><br>
   
-  {{implode('<p>', $paragraphs)}}    
+  <div class="lorem">
+  {{implode('<p>', $paragraphs)}}
+  </div>
+  
+      
     
 @stop

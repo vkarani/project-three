@@ -1,7 +1,11 @@
 @extends('_master')
 
+@section('head')
+<link rel='stylesheet' href='/css/p3_user_generator.css' type='text/css'>
+@stop
+
 @section('content')
-    <a href='/'>Home</a>
+    <a href='/' class="button">Home</a>
     <br><br>
     
     <h2>Random User Generator</h2>
@@ -48,7 +52,8 @@
       {{ Form::submit('Generate!') }}              
     {{ Form::close() }}<br><br>    
 
-  {{--Display the user info --}}    
+  {{--Display the user info --}}
+  <p class="users">      
   @for($i=0; $i < $num_users; $i++)
     Name  :
     {{$faker->name}}<br>
@@ -69,5 +74,5 @@
     @endif
     <br>    
   @endfor   
-    
+  </p>  
 @stop

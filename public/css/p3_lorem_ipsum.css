@@ -1,0 +1,9 @@
+.lorem   {text-align      : center;
+          font            : 16px "Helvetica", sans-serif;
+          color           : blueviolet;
+          background-color: #FBF8EF;
+          display         : block;
+          margin-left     : auto;
+          margin-right    : auto;
+          width           : 50em;
+          }
