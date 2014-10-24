@@ -15,6 +15,7 @@ Will present Demo in my section on 10/30/14
 ## Details for teaching team
 No login required.
 Validated css and html on http://validator.w3.org/
+Already had link to p3 in p1, but fixed a broken link.
 
 ## Outside code and resources
 Lorem ipsum Description is from wikipedia:- http://en.wikipedia.org/wiki/Lorem_ipsum
